@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+h1 {
+    font-family: var(--title-font);
+}
