@@ -1,6 +1,28 @@
+h1 {
+color:red;
+font-size: ;
+font-weight: 
+}
+h2 {
+    color: red;
+    font-size: ;
+    font-weight: 
+
+}
+h3 {
+    color:
+    font-size: ;
+    font-weight: 
+}
+p {
+font-size: ;
+font-weight: ;
+}
+
+
 hr {
-    background-color: red;
-    width: 90%;
-    size: 8px;
-    align: center;
+    color: red;
+    width: 70%;
+    size: 10px;
+    text-align: right;
 }
