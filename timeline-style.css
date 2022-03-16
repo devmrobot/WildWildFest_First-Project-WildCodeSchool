@@ -85,6 +85,11 @@ h1 {
     border-width: 8px 0 8px 16px;
     border-color: transparent transparent transparent var(--accent-color);
   }
+
+  .timeline ul li div:nth-child(2) {
+      position: absolute;
+      left: -370px;
+  }
   
   time {
     font-family: var(--paragraph-font);
