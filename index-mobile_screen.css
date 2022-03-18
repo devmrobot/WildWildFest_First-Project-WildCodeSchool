@@ -260,7 +260,7 @@ nav>ul>li>a {
 
 .video-title {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   width: 100%;
 }
 
@@ -298,3 +298,20 @@ nav>ul>li>a {
 }
 
 /* COUNTDOWN */
+
+#countdown-cta {
+  margin-top: 1.5rem;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  color:rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+h2 span{
+  content: "";
+  color:rgb(255, 0, 0);
+}
