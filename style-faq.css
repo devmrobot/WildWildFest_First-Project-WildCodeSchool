@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,13 @@ body{
     text-align: center;
     margin-top: 80px;
     margin-bottom: 40px;
-    text-decoration: underline 4px;
+    
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
 }
 
 
