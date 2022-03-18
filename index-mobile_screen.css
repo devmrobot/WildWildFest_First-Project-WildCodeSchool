@@ -39,6 +39,19 @@ body {
   z-index: -100;
 }
 
+
+/* LOGO */
+
+#logotext {
+  font-family: "Tungsten";
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 2px 0px 5px;
+  display : inline-block;
+}
+
 /* CURSOR */
 
 /* .cursor {
@@ -260,15 +273,16 @@ nav>ul>li>a {
 
 .video-title {
   position: relative;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
 .video-title video {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
+  padding: 10px;
 }   
  
 .video-title h1 {
@@ -279,13 +293,12 @@ nav>ul>li>a {
   text-align: center;
   font-size: 5.3rem;
   font-family: Tungsten;
-  line-height: 5rem;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   mix-blend-mode: screen;
 }
 
-.video-title h1 span{
+/* .video-title h1 span{
   top: 0;
   left: 0;
   width: 100%;
@@ -293,14 +306,15 @@ nav>ul>li>a {
   text-align: center;
   font-size: 5.3rem;
   font-family: Tungsten;
-  line-height: 5rem;
+  line-height: 4rem;
   color: rgb(0, 0, 0);
-}
+} */
 
 /* COUNTDOWN */
 
 #countdown-cta {
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 h2{
@@ -309,6 +323,13 @@ h2{
   color:rgb(0, 0, 0);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: center;
+  justify-content: space-around;
 }
 
 h2 span{
