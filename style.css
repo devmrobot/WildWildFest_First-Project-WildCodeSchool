@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --accent-color: red;
+    --title-font: Arial;
+    --paragraph-font: Arial;
+    --accent-font: Arial;
+
+}
