@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Tungsten";
-  src: url("/assets/fonts/Tungsten.woff2") format("woff2"),
+  src: url("/assets/fonts/Tungsten.woff2") format("woff2");
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
@@ -38,6 +38,19 @@ body {
   opacity: 0.45;
   z-index: -100;
 }
+
+/* LOGO */
+
+#logotext {
+  font-family: "Tungsten";
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 5px 10px 0px 10px;
+  display: inline-block;
+}
+
 
 /* CURSOR */
 
@@ -69,7 +82,7 @@ nav #logo {
 
 ul {
     display: flex; 
-    gap: 20px;
+    gap: 30px;
 }
 
 li {
@@ -82,7 +95,7 @@ li a {
     font-family: 'Open Sans', sans-serif;
     list-style: none;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 li a::after {

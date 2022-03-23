@@ -12,9 +12,9 @@
 
 @font-face {
   font-family: "Tungsten";
-  src: url("/assets/fonts/Tungsten.woff2") format("woff2"),
+  src: url("/assets/fonts/Tungsten.woff2") format("woff2");
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 body { 
   width: 100%;
@@ -38,6 +38,21 @@ body {
   opacity: 0.45;
   z-index: -100;
 }
+
+
+/* LOGO */
+
+#logo__header {
+  font-family: "Tungsten";
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 5px 0px 9px;
+  display : inline-block;
+}
+
+
 
 /* CURSOR */
 
@@ -180,32 +195,54 @@ nav>ul>li>a {
 
 /* BASELINE */
 
+.content{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.date {
+  font-size: 3rem;
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
 .baseline {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-40%);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 48px;
-    font-weight: 900;
-    text-align: center;
-    line-height: 1.2;
+  font-family: Tungsten;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .baseline span {
   color:rgb(243, 7, 7)
 }
 
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+}
+
 .more {
-    font-family: Arial;
-    font-size: 17px;
-    color:rgba(0, 0, 0, 0.781);
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 6%;
-    width: 100%;
-    }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color:rgba(0, 0, 0, 0.781);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+}
 
 /* SCROLL DOWN */
 
@@ -260,15 +297,16 @@ nav>ul>li>a {
 
 .video-title {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
 .video-title video {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
+  padding: 10px;
 }   
  
 .video-title h1 {
@@ -277,15 +315,44 @@ nav>ul>li>a {
   width: 100%;
   height: 100%; 
   text-align: center;
-  font-size: 5.3rem;
+  font-size: 4.8rem;
   font-family: Tungsten;
-  line-height: 5rem;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   mix-blend-mode: screen;
 }
 
-.video-title h1 span{
+.festivaldescription {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.divider {
+  content:"";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  width: 40px;
+  border: 0.7px solid;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* .video-title h1 span{
   top: 0;
   left: 0;
   width: 100%;
@@ -293,8 +360,126 @@ nav>ul>li>a {
   text-align: center;
   font-size: 5.3rem;
   font-family: Tungsten;
-  line-height: 5rem;
+  line-height: 4rem;
   color: rgb(0, 0, 0);
-}
+} */
 
 /* COUNTDOWN */
+
+#countdown-cta {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  color:rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+h2 span{
+  content: "";
+  color:rgb(255, 0, 0);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  border: 1.5px solid rgb(255, 0, 0);
+  padding: 12px 20px 10px 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 7px;
+}
+
+.day {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.hour {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.min {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.sec {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+/* FOOTER */
+
+.footer__container {
+  background-color: #1D1D1D;
+  padding: 3rem 3rem;
+}
+
+#footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+#footer__logotext {
+  font-family: "Tungsten";
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 5px 0px 9px;
+  display : inline-block;
+  color: white;
+}
+
+#footer__adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#footer__adress, .p {
+  color: #757575;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 0.6rem;
+}
+
+#footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+footer #footer__social li{
+  list-style: none;
+  font-size: 1.8rem;
+  color: #757575;
+}
+
+footer #footer__social li:hover {
+  list-style: none;
+  font-size: 1.8rem;
+  color: #ff0000;
+}

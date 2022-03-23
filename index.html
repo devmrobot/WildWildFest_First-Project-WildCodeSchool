@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="the best festival ever" />
     <title>WILD WILD FEST</title>
-    <!-- <link href="mobile_screen.css" rel="stylesheet" type="text/css"> -->
-    <link href="style.css" rel="stylesheet">
-    <link href="index-mobile_screen.css" rel="stylesheet" media="screen and (max-width: 390px)"/>
-    <link href="index-large_screen.css" rel="stylesheet" media="screen and (min-width: 392px)"/>
+    <link href="index-mobile_screen.css" rel="stylesheet" media="screen and (max-width: 900px)"/>
+    <link href="index-large_screen.css" rel="stylesheet" media="screen and (min-width: 900px)"/>
     <script defer src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   </head>
 
   <body>
+
+  <!-- Favicon hard rocker -->
+
+  <!-- CTA button sur la video home -->
 
   <!-- Cursor -->
 
@@ -33,7 +37,7 @@
 
         <nav>
           <div id="logo">
-          <a href="index.html"><img class="logo" src="/assets/images/logo.svg" alt="logo"/></a>
+            <p id="logo__header">WILD WILD FEST</p>
           </div>  
           <div id="burger-menu">
             <span></span>
@@ -48,7 +52,11 @@
           </div>
         </nav>
 
-        <p class="baseline" >WE ARE<br><span>READY.</span></p>
+        <div class="content">
+          <p class="date" >26/10/2022</span></p>
+          <p class="baseline" >BUY<span>&nbsp;NOW</span></p>
+          <button class="btn">TICKET ONLINE</button>
+        </div>
         <p class="more" >MORE</span></p>
         <div class="arrow">
           <div class="scroll-down"></div>
@@ -60,7 +68,7 @@
 
   <main>
 
-    <!-- Big Title -->
+    <!-- BIG TITLE -->
 
     <section>
 
@@ -71,27 +79,37 @@
       <h1>WILD WILD FEST</h1>
     </div>
 
+    <div class="festivaldescription">
+      <p>The transgeneration & transcultural festival</p>
+    </div>
+
+    <div class="divider"></div>
+
     </section>
   
     <!--Images + text -->
 
     <!-- COUNTDOWN + CALL tO ACTION-->
 
-      <section>
+      <section id="countdown-cta">
 
-        <h2>Allmost Sold Out</h2>
+        <h2>Get your ticket<span>&nbsp;Now</span></h2>
         <div class="countdown">
-          <div class="container-day">
-            <p classs="day">Time</p>
+          <div class="container-day"> 
+            <p class="day">Time</p>
             <p>Day</p>
           </div>
           <div class="container-hour">
-            <p classs="hour">Time</p>
+            <p class="hour">Time</p>
             <p>Hour</p>
-          <div class="container-minute">
-            <p classs="minute">Time</p>
-            <p>Second</p>
           </div>
+          <div class="container-minute">
+            <p class="min">Time</p>
+            <p>Min</p>
+          </div>
+          <div class="container-second">
+            <p class="sec">Time</p>
+            <p>Sec</p>
           </div>
         </div>
 
@@ -101,8 +119,49 @@
 
       <section></section>
 
+    <!-- Prix comme sur https://www.lifeaz.co/landing-page/particuliers -->
+
+    <section></section>
+    
+    <!-- Partenaire slider -->
+
+      <section></section>
+
+    <!-- Claquette partnership comme effet nike -->
+
+    <section></section>
+
+    <!-- Newletter ou contact -->
+
+    <section></section>
+
+
+    <section></section>
+
+    <!-- Système onglet Js https://www.youtube.com/watch?v=wKatvNTAPVA -->
+
+    <section></section>
+
   </main>
 
-    <footer></footer>
+  <footer>
+    <div class="footer__container">
+      <div id="footer__logo">
+        <p id="footer__logotext">WILD WILD FEST</p>
+      </div>
+      <div id="footer__adress">
+        <p>4 rue Alphonse Penaud</p>
+        </br>
+        <p>75018 PARIS</p>
+      </div>
+      <ul id="footer__social">
+        <li><a href="#"></a><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><a href="#"></a><ion-icon name="logo-instagram"></ion-icon></li>
+        <li><a href="#"></a><ion-icon name="logo-snapchat"></ion-icon></li>
+      </ul>
+    </div>
+  </footer>
+
+    
   </body>
 </html>
