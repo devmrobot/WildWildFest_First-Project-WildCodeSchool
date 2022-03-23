@@ -42,13 +42,13 @@ body {
 
 /* LOGO */
 
-#logotext {
+#logo__header {
   font-family: "Tungsten";
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   text-align: center;
   border: 2px solid rgb(255, 0, 0);
-  padding: 2px 2px 0px 5px;
+  padding: 2px 5px 0px 9px;
   display : inline-block;
 }
 
@@ -396,9 +396,9 @@ h2 span{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   border: 1.5px solid rgb(255, 0, 0);
-  padding: 12px 0px 0px 5px;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  padding: 12px 20px 10px 20px;
+  margin-right: 10%;
+  margin-left: 10%;
   border-radius: 7px;
 }
 
@@ -424,4 +424,62 @@ h2 span{
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+}
+
+
+/* FOOTER */
+
+.footer__container {
+  background-color: #1D1D1D;
+  padding: 3rem 3rem;
+}
+
+#footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+#footer__logotext {
+  font-family: "Tungsten";
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 5px 0px 9px;
+  display : inline-block;
+  color: white;
+}
+
+#footer__adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#footer__adress, .p {
+  color: #757575;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 0.6rem;
+}
+
+#footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+footer #footer__social li{
+  list-style: none;
+  font-size: 1.8rem;
+  color: #757575;
+}
+
+footer #footer__social li:hover {
+  list-style: none;
+  font-size: 1.8rem;
+  color: #ff0000;
 }

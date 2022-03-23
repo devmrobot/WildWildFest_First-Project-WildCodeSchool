@@ -9,6 +9,8 @@
     <link href="index-mobile_screen.css" rel="stylesheet" media="screen and (max-width: 900px)"/>
     <link href="index-large_screen.css" rel="stylesheet" media="screen and (min-width: 900px)"/>
     <script defer src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   </head>
@@ -35,7 +37,7 @@
 
         <nav>
           <div id="logo">
-            <p id="logotext">WILD WILD FEST</p>
+            <p id="logo__header">WILD WILD FEST</p>
           </div>  
           <div id="burger-menu">
             <span></span>
@@ -78,7 +80,7 @@
     </div>
 
     <div class="festivaldescription">
-      <p>The transgeration & transcultural festival</p>
+      <p>The transgeneration & transcultural festival</p>
     </div>
 
     <div class="divider"></div>
@@ -142,7 +144,23 @@
 
   </main>
 
-    <footer></footer>
+  <footer>
+    <div class="footer__container">
+      <div id="footer__logo">
+        <p id="footer__logotext">WILD WILD FEST</p>
+      </div>
+      <div id="footer__adress">
+        <p>4 rue Alphonse Penaud</p>
+        </br>
+        <p>75018 PARIS</p>
+      </div>
+      <ul id="footer__social">
+        <li><a href="#"></a><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><a href="#"></a><ion-icon name="logo-instagram"></ion-icon></li>
+        <li><a href="#"></a><ion-icon name="logo-snapchat"></ion-icon></li>
+      </ul>
+    </div>
+  </footer>
 
     
   </body>
