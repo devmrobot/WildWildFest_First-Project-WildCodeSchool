@@ -97,12 +97,13 @@ font-weight: 700;
 }
 
 .contact2 {
-        display: inline-block;
+        display: flex;
         background-color:red;
         border-radius: 10px;
         border: 4px double white;
         color: #eeeeee;
         text-align: center;
+        align-items: center;
         font-size: 28px;
         padding: 20px;
         width: 300px;
