@@ -25,7 +25,15 @@ nav {
   border-bottom: 5px solid var(--accent-color);
 }
 
-
+#logo__header {
+  font-family: "Tungsten";
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 5px 0px 9px;
+  display : inline-block;
+}
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
