@@ -3,31 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  min-height: 100%;
+}
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--secondary-color);
     font-family: var(--paragraph-font);
 }
 h1 {
     font-family: var(--title-font);
 }  
+/*
 .timeline-header {
-    border-bottom: 1rem solid var(--accent-color);
+    border-bottom: 5px solid var(--accent-color);
     padding: 1rem;
 }
-
+*/
+nav {
+  border-bottom: 5px solid var(--accent-color);
+}
 
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-    background: var(--primary-color);
+    background-image: url("/assets/images/backgrounds/timeline-fond5.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.45;
     padding: 50px 0;
   }
   
   .timeline ul li {
+    opacity: 1;
     list-style-type: none;
     position: relative;
     width: 6px;
