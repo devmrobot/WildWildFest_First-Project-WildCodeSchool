@@ -17,6 +17,8 @@ h1 {
     padding: 1rem;
 }
 
+
+
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -84,6 +86,11 @@ h1 {
     right: -15px;
     border-width: 8px 0 8px 16px;
     border-color: transparent transparent transparent var(--accent-color);
+  }
+
+  .timeline ul li div:nth-child(2) {
+      position: absolute;
+      left: -370px;
   }
   
   time {
