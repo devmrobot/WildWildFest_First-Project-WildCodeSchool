@@ -11,16 +11,13 @@ body {
     background-color: var(--secondary-color);
     color: var(--secondary-color);
     font-family: var(--paragraph-font);
+    min-height: 100vh;
 }
+
 h1 {
     font-family: var(--title-font);
 }  
-/*
-.timeline-header {
-    border-bottom: 5px solid var(--accent-color);
-    padding: 1rem;
-}
-*/
+
 nav {
   border-bottom: 5px solid var(--accent-color);
 }
@@ -37,16 +34,20 @@ nav {
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline ul {
-    background-image: url("/assets/images/backgrounds/timeline-fond5.jpeg");
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.45;
-    padding: 50px 0;
-  }
+.artist-img {
+  display: none;
+}
+.timeline::after {
   
+}
+.timeline ul {
+    padding: 50px 0;
+    opacity: 2;
+    position: relative;
+  }
+
   .timeline ul li {
-    opacity: 1;
+    opacity: 2;
     list-style-type: none;
     position: relative;
     width: 6px;
@@ -70,6 +71,7 @@ nav {
   }
   
   .timeline ul li div {
+    opacity: 1;
     position: relative;
     bottom: 0;
     width: 400px;
@@ -183,3 +185,60 @@ nav {
     }
   }
   
+
+/* FOOTER */
+
+.footer__container {
+  background-color: #1D1D1D;
+  padding: 3rem 3rem;
+}
+
+#footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+#footer__logotext {
+  font-family: "Tungsten";
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 5px 0px 9px;
+  display : inline-block;
+  color: white;
+}
+
+#footer__adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#footer__adress, .p {
+  color: #757575;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 0.6rem;
+}
+
+#footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+footer #footer__social li{
+  list-style: none;
+  font-size: 1.8rem;
+  color: #757575;
+}
+
+footer #footer__social li:hover {
+  list-style: none;
+  font-size: 1.8rem;
+  color: #ff0000;
+}
