@@ -39,8 +39,12 @@ body {
   z-index: -1;
 }
 
-
 /* LOGO */
+#logo {
+  width: 48%;
+  z-index: 2;
+  margin: 7% 7%;
+}
 
 #logo__header {
   font-family: "Tungsten";
@@ -52,16 +56,12 @@ body {
   display : inline-block;
 }
 
+/* NAVBAR */
+
 nav {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-}
-
-#logo {
-    width: 48%;
-    z-index: 2;
-    margin: 7% 7%;
 }
 
 nav>ul {
@@ -83,11 +83,13 @@ nav>ul>li>a {
 
 /* MENU */
 
+/* BURGER MENU LOGO*/
+
 #burger-menu {
     cursor: pointer;
     height: 27px;
     width: 27px;
-    overflow: visible;
+  /*  overflow: visible; */
     position: relative;
     z-index: 3;
     margin: 7% 7%;
@@ -142,6 +144,8 @@ nav>ul>li>a {
   opacity: 0;
   width: 0;
 }
+
+/* ACTUAL MENU TRIGGERED BY BURGER MENU LOGO */
 
 #menu{
   z-index: 2;
