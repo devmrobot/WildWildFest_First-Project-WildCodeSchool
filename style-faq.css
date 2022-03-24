@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: black;
+    --primary-color: white;
     --secondary-color: white;
     --accent-color: red;  
 }
 body{
     font-family: "Tungsten";
-    color: #fff;
-    background-color: #000;
+    color:black;
+    background-color:white;
 }
 
 @font-face {
@@ -30,7 +30,7 @@ body{
 .title2 {
     color:red;
     font-size: 16px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 30px 30px;
     line-height: 1.5;
     text-align: left;
     font-size: 15px;
@@ -52,12 +52,12 @@ font-size: 12px;
 }
 
 .question {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
     margin: 0 20px 20px;
 }
 .question button {
     width: 100%;
-    background-color: #000;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +65,7 @@ font-size: 12px;
     border: none;
     outline: none;
     font-size: 16px;
-    color: #fff;
+    color: black;
     font-weight: 700;
     cursor: pointer;
 }
@@ -76,11 +76,11 @@ font-size: 12px;
     line-height: 1.5;
     overflow: hidden;
     transition: all 0.6s ease;
-    color: #fff;
+    color:black;
 }
 .d-arrow{
     transition: transform 0.5s ease-in ;
-    color: #fff;
+    color: black;
 }
 
 .contact1 {
@@ -127,3 +127,25 @@ font-weight: 700;
     transform: rotate(180deg);
 }
 
+@media screen and (max-width: 600px) {
+    .title {
+    font-size: 30px ;
+ 
+    }
+    h2 {
+    font-size: 20px ;
+    }
+ 
+    span {
+ 
+    font-size: 13px;
+    }
+ 
+    p {
+ 
+    font-size: 10px;
+ 
+    }
+ 
+ 
+     }
