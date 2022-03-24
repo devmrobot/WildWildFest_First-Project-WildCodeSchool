@@ -1,16 +1,41 @@
-
-@media screen and (max-width: 600px) {
-.title {
-font-size: 7px;
-margin-top: ;
-margin-bottom: ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --accent-color: red;  
+}
+body{
+    font-family: "Tungsten";
+    color: #fff;
+    background-color: #000;
 }
 
- .title2 {
-font-size: 16px;
-margin-top: ;
-margin-bottom: ;
+@font-face {
+    font-family: "Tungsten";
+    src: url("/assets/fonts/Tungsten.woff2") format("woff2"),
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+  .title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    
 }
+.title2 {
+    color:red;
+    font-size: 16px;
+    margin: 0 0 20px 20px;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 15px;
+}
+
 
 .question button {
 font-size: 14px ;
@@ -21,71 +46,16 @@ font-size: 12px;
 
 }
 
-
-}
-    
-@media screen and(min-width: 768px){
-
-
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: black;
-    --secondary-color: white;
-    --accent-color: red;  
-    --title-font: Arial;
-    --paragraph-font: Arial;
-    --accent-font: Arial;
-}
-
-@font-face {
-    font-family: "Tungsten";
-    src: url("/assets/fonts/Tungsten.woff2") format("woff2"),
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
-body{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    background-color: #000;
-}
-
-
-.title{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    
-}
-
-.title2 {
-    color:red;
-    margin: 0 0 20px 20px;
-    line-height: 1.5;
-    text-align: left;
-    font-size: 15px;
-}
-
-
 .questions-container{
     max-width: 800px;
     
 }
 
-.question{
+.question {
     border-bottom: 1px solid #fff;
     margin: 0 20px 20px;
 }
-.question button{
+.question button {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -99,7 +69,7 @@ body{
     font-weight: 700;
     cursor: pointer;
 }
-.question p{
+.question p {
     font-size: 14px;
     max-height: 0;
     opacity: 0;
@@ -124,8 +94,6 @@ border: none;
 outline: none;
 font-size: 16px;
 font-weight: 700;
-
-
 }
 
 .contact2 {
@@ -145,10 +113,10 @@ font-weight: 700;
         cursor: pointer;
         margin: 30px;
       }
-
-
-
-
+      a {
+        color: red;
+    }
+    
 /*add this class when click*/
 .question p.show{
     max-height: 200px; 
@@ -158,6 +126,4 @@ font-weight: 700;
 .question button .d-arrow.rotate{
     transform: rotate(180deg);
 }
-a {
-    color: red;
-}
+
