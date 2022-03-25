@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: black;
-    --secondary-color: white;
-    --accent-color: red;
+  --primary-color: rgb(29, 29, 29);
+  --secondary-color: white;
+  --accent-color: red;
 }
 
 @font-face {
@@ -46,14 +46,14 @@ body {
   font-size: 1.7rem;
   letter-spacing: 0.2rem;
   text-align: center;
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid var(--accent-color);
   padding: 2px 5px 0px 9px;
   display : inline-block;
 }
 
 #logo__header>a{
   text-decoration: none;
-  color: black;
+  color: var(--primary-color);
 }
 
 /* NAVIGATION */
@@ -174,7 +174,7 @@ nav>ul>li>a {
   list-style: none;
 }
 #menu a{
-  color:#fff;
+  color: var(--secondary-color);
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 38px;
@@ -210,22 +210,22 @@ nav>ul>li>a {
 }
 
 .baseline span {
-  color:rgb(243, 7, 7)
+  color:var(--accent-color);
 }
 
 .btn__cta1 {
   display: inline-block;
   padding: 8px 12px;
-  border: 1px rgb(0, 0, 0) solid;
+  border: 1px var(--primary-color) solid;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0);
+  background: none;
   cursor: pointer;
 }
 
 .more {
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
-  color:rgba(0, 0, 0, 0.781);
+  color:var(--primary-color);
   display: flex;
   justify-content: center;
   position: absolute;
@@ -253,8 +253,8 @@ nav>ul>li>a {
   text-shadow: 0;
   width: 17px;
   height: 17px;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
   z-index: 9;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
@@ -304,10 +304,10 @@ nav>ul>li>a {
   width: 100%;
   height: 100%; 
   text-align: center;
-  font-size: 4.8rem;
+  font-size: 4.4rem;
   font-family: Tungsten;
   letter-spacing: 0.2rem;
-  color: rgb(0, 0, 0);
+  color: var(--primary-color);
   background-color: rgb(255, 255, 255);
   mix-blend-mode: screen;
 }
@@ -316,7 +316,7 @@ nav>ul>li>a {
   display: flex;
   justify-content: center;
   text-align: center;
-  color:rgb(0, 0, 0);
+  color:var(--primary-color);
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -333,7 +333,7 @@ nav>ul>li>a {
   display: flex;
   justify-content: center;
   text-align: center;
-  color:rgb(0, 0, 0);
+  color:var(--primary-color);
   width: 40px;
   border: 0.7px solid;
   margin-right: auto;
@@ -352,7 +352,7 @@ nav>ul>li>a {
 h2{
   display: flex;
   justify-content: center;
-  color:rgb(0, 0, 0);
+  color:var(--primary-color);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
@@ -360,7 +360,7 @@ h2{
 
 h2 span{
   content: "";
-  color:rgb(255, 0, 0);
+  color:var(--accent-color);
 }
 
 .countdown {
@@ -410,19 +410,18 @@ h2 span{
   padding: 10px 14px;
   border-radius: 5px; 
   border: none; 
-  background-color: #ff0000;
+  background-color: var(--accent-color);
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
 .btn__cta:hover {
-  background-color: #1D1D1D;
-  color: #ff0000;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
 }
-
 
 /* SLIDER */
 
@@ -484,7 +483,7 @@ h2 span{
 	font-family: 'Lora', serif;
 	font-size: 90px;
 	font-weight: 700;
-	color: #ffffff;
+	color: var(--secondary-color);
 	white-space: nowrap;
 	mix-blend-mode: difference;
 }
@@ -496,9 +495,9 @@ h2 span{
 	width: 80px;
 	height: 80px;
 	font-size: 0;
-	color: #ffffff;
+	color: var(--secondary-color);
 	background-color: transparent;
-	border-color: #ffffff;
+	border-color: var(--secondary-color);
 	border-width: 3px 0;
 	border-radius: 50%;
 	transform: translateY(-50%);
@@ -554,7 +553,7 @@ h2 span{
   display: flex; /*its better to use inline-flex*/
 }
 .email-box i{
-  background: #000000;
+  background: var(--primary-color);
   width: 40px;
   line-height: 40px;
 }
@@ -571,8 +570,8 @@ h2 span{
   padding: 0 10px;
 }
 .btn{
-  background: #000000;
-  color: white;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
@@ -584,7 +583,7 @@ h2 span{
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: var(--secondary-color);
   
 }
 
@@ -605,10 +604,10 @@ h2 span{
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   text-align: center;
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid var(--accent-color);
   padding: 2px 5px 0px 9px;
   display : inline-block;
-  color: white;
+  color: var(--secondary-color);
 }
 
 #footer__adress {
@@ -642,5 +641,5 @@ footer #footer__social li{
 footer #footer__social li:hover {
   list-style: none;
   font-size: 1.8rem;
-  color: #ff0000;
+  color: var(--accent-color);
 }

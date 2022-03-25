@@ -3,14 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
-    --primary-color: black;
-    --secondary-color: white;
-    --accent-color: red;
-    --title-font: Arial;
-    --paragraph-font: Arial;
-    --accent-font: Arial;
+  --primary-color: rgb(29, 29, 29);
+  --secondary-color: white;
+  --accent-color: red;
+  --title-font: Arial;
+  --paragraph-font: Arial;
+  --accent-font: Arial;
 }
+
+@font-face {
+  font-family: "Tungsten";
+  src: url("/assets/fonts/Tungsten.woff2") format("woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 /* LOGO */
 
