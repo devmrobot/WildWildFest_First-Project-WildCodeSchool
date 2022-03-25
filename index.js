@@ -12,7 +12,7 @@ burgerMenu.addEventListener('click',function(){
 /* COUNTDOWN */
 
 const countDown = () => {
-    const countDate = new Date("March 31, 2022 00:00:00").getTime();
+    const countDate = new Date("March 27, 2022 00:00:00").getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -35,41 +35,47 @@ const countDown = () => {
 setInterval(countDown, 1000);
  
 
-/* CURSOR */
+/* SLIDER */
 
-gsap.set('.cursor',{xPercent: -50,yPercent:-50});
-var cursor = document.querySelector('.cursor');
+$(".photo-slider").slick();
 
-window.addEventListener('mousemove',e => {
-    gsap.to(cursor,0.2,{x:e.clientX,y:e.clientY});
-}); 
+$('.autoplay').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
-const listLi = document.querySelectorAll('.navbar__container ul li a');
-const listImage = document.querySelectorAll('.navbar__container .nav__image .images');
+var w = $(".photo-slider").width();
 
-let currentZIndex = 100;
-let lastSeen = listLi[0];
+$(".photo-slider .slick-slide").each(function() {
+	var tlEnter = gsap.timeline({ paused: true });
+	var tlLeave = gsap.timeline({ paused: true });
 
-listLi.forEach(li => {
-    li.addEventListener('mouseenter', () => {
-        console.log('mouseenter', li)
+	tlEnter.fromTo($(this).find(".text"), {
+		x: w,
+		y: "-50%",
+		opacity: .5
+	}, {
+		x: "-100%",
+		y: "-50%",
+		opacity: 1,
+		duration: 15,
+		ease: Power0.easeNone,
+		repeat: -1
+	});
+	tlLeave.to($(this).find(".text"), {
+		y: "+=100%",
+		opacity: 0,
+		duration: .3,
+		ease: Power0.easeNone
+	});
 
-        const img = [...listImage].find(img => {
-            return img.dataset.projectNo === li.dataset.projectNo
-        })
-
-        if(lastSeen === li) return
-
-        img.style.transition = null
-
-        img.style.opacity = 0;
-        img.style.zIndex = currentZIndex++;
-
-        setTimeout(() => {
-            img.style.opacity = 1;
-            img.style.transition = "opacity 700ms ease"
-        }, 1)
-
-        lastSeen = li;
-    })
-})
+	$(this).on("mouseenter", function() {
+		tlEnter.restart();
+	});
+	$(this).on("mouseleave", function() {
+		tlEnter.kill();
+		tlLeave.restart();
+	});
+});
