@@ -31,188 +31,63 @@ nav {
   padding: 2px 5px 0px 9px;
   display : inline-block;
 }
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*
-.timeline::after {
-  content: "";
-  position: absolute;
-  background-image: url(/assets/images/backgrounds/timeline-fond5.jpeg);
-  background-size: cover;
-  background-position: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -4;
-  opacity: 0.45;
+.timeline {
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 20px 20px;
+  gap: 20px;
 }
-*/
-.timeline ul {
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: space-around;
-    flex-wrap: wrap;
-  }
-/*
-  .timeline ul li {
-    opacity: 2;
-    list-style-type: none;
-    position: relative;
-    width: 6px;
-    margin: 0 auto;
-    padding-top: 50px;
-    background: #fff;
-    font-family: var(--paragraph-font);
-  }
+.card {
+  border: solid 1px red;
+  border-radius: 8px;
+  height:500px;
+  width: 250px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 0 0 10px 0;
+}
+.artist-img {
+  width: 100%;
   
-  .timeline ul li::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: inherit;
-    z-index: 1;
-  }
-  */
-  
-  .timeline {
-    margin: 1rem;
-    display: grid;
-    grid-template-rows: 5fr 1fr 2fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "a b c d";
-    position: relative;
-    /*bottom: 0;*/
-    width: 400px;
-    padding: 15px;
-    color: var(--primary-color);
-    border: solid 3px var(--accent-color);
-    border-radius: 10px;
-  }
+}
+.artist-name {
+  color: #1D1D1D;
+}
+.artist-time {
+  color: #1D1D1D;
+}
+.artist-description {
+  color: #1D1D1D;
+}
 
-  .artist{
-    display: flex;
-    flex-direction: space-between;
-    position: absolute;
-  }
 
-  .artist-img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index:-1;
-  }
-  /*
-  .timeline ul li div::before {
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  
-  .timeline ul li:nth-child(odd) div {
-    left: 45px;
-  }
-  
-  .timeline ul li:nth-child(odd) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent var(--accent-color) transparent transparent;
-  }
-  
-  .timeline ul li:nth-child(even) div {
-    left: -439px;
-  }
-  
-  .timeline ul li:nth-child(even) div::before {
-    right: -15px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent var(--accent-color);
-  }
-
-  .timeline ul li div:nth-child(2) {
-      position: absolute;
-      left: -370px;
-  }
-  
-  time {
-    font-family: var(--paragraph-font);
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  */
-  
-  /* EFFECTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  /*
-  .timeline ul li::after {
-    transition: background 0.5s ease-in-out;
-  }
-  
-  .timeline ul li.in-view::after {
-    background: var(--accent-color);
-  }
-  
-  .timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
-  }
-  
-  .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
-  }
-  
-  .timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-  }
-  */
-  
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
-  @media screen and (max-width: 900px) {
-    .timeline ul li div {
-      width: 250px;
-    }
-    .timeline ul li:nth-child(even) div {
-      left: -289px;
-      /*250+45-6*/
+  @media screen and (min-width: 601px) {
+    .card {
+      height:600px;
+      width: 450px;
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .timeline ul li {
-      margin-left: 20px;
+  @media screen and (min-width: 401px) and (max-width: 600px) {
+    .card {
+      height:500px;
+      width: 350px;
     }
-    .timeline ul li div {
-      width: calc(100vw - 91px);
-    }
-    .timeline ul li:nth-child(even) div {
-      left: 45px;
-    }
-    .timeline ul li:nth-child(even) div::before {
-      left: -15px;
-      border-width: 8px 16px 8px 0;
-      border-color: transparent var(--accent-color) transparent transparent;
+  }
+
+  @media screen and (max-width: 400px) {
+    .card {
+      height:500px;
+      width: 250px;
     }
   }
   

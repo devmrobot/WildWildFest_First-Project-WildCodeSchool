@@ -3,66 +3,65 @@ const artists = [
         name: "Elvis Presley",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "/assets/images/artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     },
     {
         name: "Chuck Berry",
         time: "Mer. 22 Octobre 2022 - 16h30",
         image: "./assets/images/Artists/elvis.jpeg",
-        description: "dfklzejflkezjfdklezjflkezjdfkezjfkzejfkljezklfjzelkfjelkfjlkezfjzekljfeklzjflkezfjklezjflkzejflkezjflkjzelfjezklfjkljezflkjzelfjzelkjflkezjflkezjfljezfklezjflkezjflezjfelzjfklezjf",
+        description: "vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
     }
 ]
 function createCard(name, time, image, description) {
 
-    const cardList = document.querySelector("ul.list-container");
-    const newCard = document.createElement("li");
+    const cardList = document.querySelector(".timeline");
     
 
     const cardBody = document.createElement("div");
     cardBody.classList.add("card");
-    newCard.appendChild(cardBody);
+    cardList.appendChild(cardBody);
 
     const cardImage = document.createElement("img");
     cardImage.classList.add("artist-img");
@@ -84,7 +83,6 @@ function createCard(name, time, image, description) {
     cardDescription.innerHTML = description;
     cardBody.appendChild(cardDescription);
 
-    cardList.appendChild(newCard);
 }
 for (let i = 0; i < artists.length; i++) {
     createCard(
