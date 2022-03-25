@@ -63,25 +63,29 @@ function createCard(name, time, image, description) {
     cardBody.classList.add("card");
     cardList.appendChild(cardBody);
 
-    const cardImage = document.createElement("img");
-    cardImage.classList.add("artist-img");
-    cardBody.appendChild(cardImage);
-    cardImage.src = `${image}`
+    const cardBack = document.createElement("div");
+    cardBack.classList.add("back-img");
+    cardBack.style.backgroundImage = `url(${image})`;
+    cardBody.appendChild(cardBack);
+
+    const cardText = document.createElement("div");
+    cardText.classList.add("card-text");
+    cardBack.appendChild(cardText)
 
     const cardTitle = document.createElement("h2");
     cardTitle.classList.add("artist-name");
-    cardBody.appendChild(cardTitle);
+    cardText.appendChild(cardTitle);
     cardTitle.innerHTML = name;
 
     const cardTime = document.createElement("h3");
     cardTime.classList.add("artist-time");
     cardTime.innerHTML = time;
-    cardBody.appendChild(cardTime);
+    cardText.appendChild(cardTime);
 
     const cardDescription = document.createElement("p");
     cardDescription.classList.add("artist-description");
     cardDescription.innerHTML = description;
-    cardBody.appendChild(cardDescription);
+    cardText.appendChild(cardDescription);
 
 }
 for (let i = 0; i < artists.length; i++) {

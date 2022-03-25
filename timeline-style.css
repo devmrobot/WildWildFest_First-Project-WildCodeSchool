@@ -42,19 +42,26 @@ nav {
   gap: 20px;
 }
 .card {
-  border: solid 1px red;
+  border: solid 1px black;
   border-radius: 8px;
   height:500px;
   width: 250px;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding: 0 0 10px 0;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px black;
 }
-.artist-img {
-  width: 100%;
+.back-img {
+  height: 100%;
+  background-image: url("./assets/images/Artists/elvis.jpeg");
+  background-size: cover;
   
+}
+.card-text {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  left: O;
 }
 .artist-name {
   color: #1D1D1D;
