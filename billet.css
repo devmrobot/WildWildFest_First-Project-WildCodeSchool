@@ -83,7 +83,7 @@ Blocks
     list-style-type: none;
 }
 
-.footer {
+.footer_tab {
     padding: 15px;
     background: #F0F3F4;
 }
@@ -157,15 +157,6 @@ Blocks
     }
 }
 
-
-
-
-
-
-
-
-
-
 .skeleton,
 .skeleton ul,
 .skeleton li,
@@ -211,3 +202,4 @@ Blocks
     margin: 100px !important;
     clear: both;
 }
+

@@ -3,13 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
-    --primary-color: black;
-    --secondary-color: white;
-    --accent-color: red;
-    --title-font: Arial;
-    --paragraph-font: Arial;
-    --accent-font: Arial;
+  --primary-color: rgb(29, 29, 29);
+  --secondary-color: white;
+  --accent-color: red;
+  --title-font: Arial;
+  --paragraph-font: Arial;
+  --accent-font: Arial;
+}
+
+@font-face {
+  font-family: "Tungsten";
+  src: url("/assets/fonts/Tungsten.woff2") format("woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* LOGO */
+
+#logo__header {
+  font-family: "Tungsten";
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 2px 5px 0px 9px;
+  display : inline-block;
+}
+
+#logo__header>a{
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -57,3 +81,72 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
+/* FOOTER */
+
+footer{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  margin-top: 10rem;
+  padding-top:50px;
+  height:50px;
+}
+
+.footer__container {
+    background-color: #1D1D1D;
+    padding: 3rem 3rem;
+    margin-top: 10rem;
+  }
+  
+  #footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #footer__logotext {
+    font-family: "Tungsten";
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 2px 5px 0px 9px;
+    display : inline-block;
+    color: white;
+  }
+  
+  #footer__adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  #footer__adress, .p {
+    color: #757575;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 0.6rem;
+  }
+  
+  #footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  footer #footer__social li{
+    list-style: none;
+    font-size: 1.8rem;
+    color: #757575;
+  }
+  
+  footer #footer__social li:hover {
+    list-style: none;
+    font-size: 1.8rem;
+    color: #ff0000;
+  }
+
+

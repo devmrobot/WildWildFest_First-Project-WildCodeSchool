@@ -4,28 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="the best festival ever" />
+    <meta name="description" content="the best festival ever"/>
     <title>WILD WILD FEST</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href="index-mobile_screen.css" rel="stylesheet" media="screen and (max-width: 900px)"/>
     <link href="index-large_screen.css" rel="stylesheet" media="screen and (min-width: 900px)"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <script defer src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </head>
 
   <body>
 
-  <!-- Favicon hard rocker -->
-
-  <!-- CTA button sur la video home -->
-
-  <!-- Cursor -->
-
-  <div class="cursor"></div>
-
-  <!-- Intro Fullscreen -->
+  <!-- INTRO FULLSCREEN -->
 
     <header>
 
@@ -37,7 +32,7 @@
 
         <nav>
           <div id="logo">
-            <p id="logo__header">WILD WILD FEST</p>
+            <p id="logo__header"><a href="index.html">WILD WILD FEST</a></p>
           </div>  
           <div id="burger-menu">
             <span></span>
@@ -55,7 +50,7 @@
         <div class="content">
           <p class="date" >26/10/2022</span></p>
           <p class="baseline" >BUY<span>&nbsp;NOW</span></p>
-          <button class="btn">TICKET ONLINE</button>
+          <button class="btn__cta1" onclick="window.location.href ='./billet.html';">TICKET ONLINE</button>
         </div>
         <p class="more" >MORE</span></p>
         <div class="arrow">
@@ -72,24 +67,22 @@
 
     <section>
 
-    <div class="video-title">
-      <video autoplay muted loop id="video_text">
-        <source src="assets/videos/video_text.mp4" type="video/mp4">
-      </video>
-      <h1>WILD WILD FEST</h1>
-    </div>
+      <div class="video-title">
+        <video autoplay muted loop id="video_text">
+          <source src="assets/videos/video_text.mp4" type="video/mp4">
+        </video>
+        <h1>WILD WILD FEST</h1>
+      </div>
 
-    <div class="festivaldescription">
-      <p>The transgeneration & transcultural festival</p>
-    </div>
+      <div class="festivaldescription">
+        <p>The transgeneration & transcultural festival</p>
+      </div>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
     </section>
-  
-    <!--Images + text -->
 
-    <!-- COUNTDOWN + CALL tO ACTION-->
+    <!-- COUNTDOWN + CALL TO ACTION-->
 
       <section id="countdown-cta">
 
@@ -112,37 +105,55 @@
             <p>Sec</p>
           </div>
         </div>
+      <div class="button__cta">
+        <button class="btn__cta" onclick="window.location.href ='./billet.html';">TICKET ONLINE</button>
+      </div>
 
       </section>
 
-    <!-- Slider -->
+    <!-- SLIDER -->
 
-      <section></section>
-
-    <!-- Prix comme sur https://www.lifeaz.co/landing-page/particuliers -->
-
-    <section></section>
-    
-    <!-- Partenaire slider -->
-
-      <section></section>
-
-    <!-- Claquette partnership comme effet nike -->
-
-    <section></section>
-
-    <!-- Newletter ou contact -->
-
-    <section></section>
-
-
-    <section></section>
-
-    <!-- Système onglet Js https://www.youtube.com/watch?v=wKatvNTAPVA -->
-
-    <section></section>
+    <section id="slider">
+      <div class="photo-slider">
+        <div class="item">
+          <span class="photo"><img src="assets/images/concert1.jpg" alt=""></span>
+          <span class="text">Iggy Plop</span>
+        </div>
+        <div class="item">
+          <span class="photo"><img src="assets/images/concert2.jpg" alt=""></span>
+          <span class="text">Slam Plop</span>
+        </div>
+        <div class="item">
+          <span class="photo"><img src="assets/images/concert3.jpg" alt=""></span>
+          <span class="text">Death Plop</span>
+        </div>
+        <div class="item">
+          <span class="photo"><img src="assets/images/concert4.jpg" alt=""></span>
+          <span class="text">Dj Plop</span>
+        </div>
+        <div class="item">
+          <span class="photo"><img src="assets/images/concert5.jpg" alt=""></span>
+          <span class="text">Mc Plop</span>
+        </div>
+      </div>
+    </section>
 
   </main>
+
+  <!-- CONTAINER -->
+
+      <div class="container">
+        <form action="">
+          <p>Join Our <span>&nbsp;Newsletter</span></p>
+          <div class="email-box">
+            <i class="email"><ion-icon name="mail-outline"></ion-icon></i>
+            <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+            <button class="btn" type="button" name="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+  <!-- FOOTER -->
 
   <footer>
     <div class="footer__container">
